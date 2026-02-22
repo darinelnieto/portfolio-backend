@@ -1,0 +1,16 @@
+{
+    "post_types": {
+        "portfolio": []
+    },
+    "taxonomies": {
+        "portfolio_cat": []
+    },
+    "admin_pages": [
+        "options-theme_page_acf-options-header",
+        "toplevel_page_acf-options-footer",
+        "options-theme_page_acf-options-home",
+        "options-theme_page_acf-options-about",
+        "options-theme_page_acf-options-solutions",
+        "options-theme_page_acf-options-portfolio"
+    ]
+}

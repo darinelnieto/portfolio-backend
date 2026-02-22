@@ -1,0 +1,38 @@
+{
+  "name": "ditto",
+  "version": "1.0.0",
+  "description": "Ditto v1.0",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "watch": "npx webpack --watch",
+    "dev": "npx webpack -d",
+    "prod": "npx webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipe-code/ditto.git"
+  },
+  "keywords": [],
+  "author": "PIPE:CODE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pipe-code/ditto/issues"
+  },
+  "homepage": "https://github.com/pipe-code/ditto#readme",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "jquery": "^3.5.1",
+    "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "css-loader": "^6.11.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.9.4",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^4.10.0"
+  }
+}
