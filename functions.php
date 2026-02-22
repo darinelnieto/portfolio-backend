@@ -154,3 +154,14 @@ function portfolio_post(){
   ));
 }
 add_action('init', 'portfolio_post', 3);
+
+add_filter( 'wp_rest_cache/allowed_endpoints', 'registrar_mis_endpoints_headless', 10, 1 );
+function registrar_mis_endpoints_headless( $allowed_endpoints ) {
+    $namespaces = ['home', 'header', 'footer', 'about', 'portfolio', 'solutions'];
+    foreach ( $namespaces as $ns ) {
+        if ( ! isset( $allowed_endpoints[ $ns ] ) ) {
+            $allowed_endpoints[ $ns ][] = 'content';
+        }
+    }
+    return $allowed_endpoints;
+}
