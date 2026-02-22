@@ -24,7 +24,7 @@ function about_handler(){
         foreach($tecnical['tecnical_list'] as $item){
             array_push($tecnical_list, array(
                 'description' => $item['description'] ?? '',
-                'icon' => wp_get_attachment_image($item['icon'], 'full', false, array(
+                'icon' => wp_get_attachment_image($item['icon'], '', false, array(
                     'class' => 'icon',
                     'loading' => 'lazy',
                     'decoding' => 'async'
@@ -51,7 +51,7 @@ function about_handler(){
             "description" => $hero['description'] ?? '',
             "image" => wp_get_attachment_image($hero['image'], 'full', false, array(
                 'class'=> 'hero-image',
-                'loading' => 'eager', 
+                'loading' => 'lazy', 
                 'fetchpriority' => 'high',
                 'decoding' => 'sync'
             )) ?? '',

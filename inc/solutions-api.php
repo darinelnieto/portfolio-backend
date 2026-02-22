@@ -40,7 +40,7 @@ function solutions_handler(){
             'description' => $hero['description'] ?? '',
             'image' => wp_get_attachment_image($hero['image'], 'full', false, array(
                 'class' => 'hero-image',
-                'loading' => 'eager', 
+                'loading' => 'lazy', 
                 'fetchpriority' => 'high',
                 'decoding' => 'sync'
             )) ?? ''

@@ -86,7 +86,7 @@ function home_handler(){
       'text_end' => $hero['text_end'] ?? '',
       'main_image' => wp_get_attachment_image($hero['main_image'], 'full', false, array(
         'class' => 'hero-image',
-        'loading' => 'eager', 
+        'loading' => 'lazy', 
         'fetchpriority' => 'high',
         'decoding' => 'sync'
       )) ?? '',

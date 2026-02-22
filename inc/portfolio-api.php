@@ -79,7 +79,7 @@ function portfolio_handler(){
             'desctiprion' => $hero['description'] ?? '',
             'image' => wp_get_attachment_image($hero['image'], 'full', false, array(
                 'class' => 'main-image',
-                'loading' => 'eager', 
+                'loading' => 'lazy', 
                 'fetchpriority' => 'high',
                 'decoding' => 'sync'
             )) ?? '',
