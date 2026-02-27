@@ -18,6 +18,7 @@ function home_handler(){
   };
   // Hero content
   $hero = get_field('hero_home', 'option');
+  $ctas = $hero['ctas'];
   // specialties
   $specialties = get_field('specialties', 'option');
   $technologies = [];
@@ -90,6 +91,7 @@ function home_handler(){
         'fetchpriority' => 'high',
         'decoding' => 'sync'
       )) ?? '',
+      'ctas' => $ctas,
     ],
     'specialties'=>[
       "title" => $specialties['title'] ?? '',
